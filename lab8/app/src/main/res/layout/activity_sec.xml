@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecActivity">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" android:id="@+id/textView" android:text="姓名:"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintTop_toTopOf="@+id/textView" android:id="@+id/ed_name" android:layout_marginStart="8dp" app:layout_constraintStart_toEndOf="@+id/textView" app:layout_constraintBottom_toBottomOf="@+id/textView" android:ems="10" android:hint="請輸入姓名" android:inputType="textPersonName"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintStart_toStartOf="@+id/textView" android:id="@+id/textView2" android:text="電話:" app:layout_constraintTop_toBottomOf="@+id/ed_name" android:layout_marginTop="32dp"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintTop_toTopOf="@+id/textView2" android:id="@+id/ed_phone" android:layout_marginStart="8dp" app:layout_constraintStart_toEndOf="@+id/textView2" app:layout_constraintBottom_toBottomOf="@+id/textView2" android:ems="10" android:hint="請輸入電話" android:inputType="phone"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintStart_toStartOf="@+id/textView2" android:id="@+id/btn_send" android:text="確認新增" app:layout_constraintTop_toBottomOf="@+id/ed_phone" android:layout_marginTop="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout android:padding="8dp" android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView android:layout_height="80dp" android:layout_width="wrap_content" app:srcCompat="@android:drawable/ic_menu_gallery" android:layout_gravity="center" android:adjustViewBounds="true" android:id="@+id/img_photo"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:id="@+id/tv_msg" android:textSize="18sp" android:text="TextView"/>
+
+</LinearLayout>
